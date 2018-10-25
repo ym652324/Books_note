@@ -74,7 +74,13 @@ var person2=new Person('def',27,'Docter');
 person1.sayName();//abc
 person1.sayName();//def
 ```
-<ul>（1）区别：
- <ol>没有显示地创建对象；</ol>
- <ol>直接将属性和方法赋值给了this对象；</ol>
- </ul>
+（1）区别：
+a. 没有显示地创建对象；  
+b. 直接将属性和方法赋值给了this对象；  
+c. 没有return语句   
+（2）过程：  
+a. 创建一个新对象  
+b. 将构造函数作用域赋值给新对象，此时this指向这个新对象  
+c. 为这个新对象添加属性  
+d. 返回新对象  
+
